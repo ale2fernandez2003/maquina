@@ -16,11 +16,11 @@ public class MaquinaExpendedoraSimple {
      * precio del billete y el origen y destino dados. Se asume que el precio
      * del billete que se recibe es mayor que 0.
      */
-    public MaquinaExpendedoraSimple(int precioDelBillete, String origen, String destino) {
-        precioBillete = precioDelBillete;
+    public MaquinaExpendedoraSimple(String origen, String destino) {
+        precioBillete=20;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
-        estacionOrigen = origen;
+        estacionOrigen = "León";
         estacionDestino = destino;
     }
 
@@ -42,7 +42,7 @@ public class MaquinaExpendedoraSimple {
      * Simula la introduccion de dinero por parte del cliente actual
      */
     public void introducirDinero(int cantidadIntroducida) {
-        balanceClienteActual = balanceClienteActual + cantidadIntroducida;
+            balanceClienteActual = balanceClienteActual + cantidadIntroducida;
     }
 
     /**
